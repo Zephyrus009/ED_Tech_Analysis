@@ -13,10 +13,10 @@ import plotly.graph_objects as go
 from textblob import TextBlob
 
 
-Leads_basic_details = pd.read_csv("D:\ED_Tech_Analysis\Data\leads_basic_details.csv")  
-Leads_demo_watched_details = pd.read_csv("D:\ED_Tech_Analysis\Data\leads_demo_watched_details.csv")
-Leads_interaction_details = pd.read_csv("D:\ED_Tech_Analysis\Data\leads_interaction_details.csv")
-Leads_reasons_for_no_interest = pd.read_csv("D:\ED_Tech_Analysis\Data\leads_reasons_for_no_interest.csv")
+Leads_basic_details = pd.read_csv("Data\leads_basic_details.csv")  
+Leads_demo_watched_details = pd.read_csv("Data\leads_demo_watched_details.csv")
+Leads_interaction_details = pd.read_csv("Data\leads_interaction_details.csv")
+Leads_reasons_for_no_interest = pd.read_csv("Data\leads_reasons_for_no_interest.csv")
 
 # Merged Awarness Dataset 
 Awarness_data = pd.merge(Leads_basic_details,Leads_demo_watched_details,how='inner')
